@@ -8,7 +8,7 @@ mesh(j,k,j.*k);
 %Parametros
 a = 0;
 b = 2;
-h = 0.001;
+h = 0.000009;
 y0 = [-9 -8 3 2];
 %Euler hacia adelante
 [t u v uP vP] = eu(a,b,y0,h);
@@ -20,3 +20,7 @@ plot3(u,v,u.*v,"k",'linewidth',4);
 hold on;
 %Grafica de la geodesica sobre la superficie
 plot3(u2,v2,(u2).*(v2),"r",'linewidth',4);
+%resolver ecuacion metodo octave
+p= lsode ("oct", y0, t);
+hold on;
+plot3(p(:,1),p(:,2),p(:,1).*p(:,2), 'b', "linewidth",8);
