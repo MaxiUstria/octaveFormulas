@@ -1,0 +1,12 @@
+erroreuU = promerror(p(:,1),u);
+erroreuV = promerror(p(:,2),v);
+errordifCenU = promerror(p(:,1),u2);
+errordifCenV = promerror(p(:,2),v2);
+errorabseuU = norm(p(:,1)-(u)');
+errorabseuV = norm(p(:,2)-(v)');
+errorabsdifCenU = norm(p(:,1)-(u2)');
+errorabsdifCenV = norm(p(:,2)-(v2)');
+errorreleuU = norm(p(:,1)-(u)')/norm(p(:,1));
+errorreleuV = norm(p(:,2)-(v)')/norm(p(:,2));
+errorreldifCenU = norm(p(:,1)-(u2)')/norm(p(:,1));
+errorreldifCenV = norm(p(:,2)-(v2)')/norm(p(:,2));

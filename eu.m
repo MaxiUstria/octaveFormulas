@@ -5,7 +5,7 @@ function [t,u,v,uP,vP] = eu(a,b,y0,h)
   v(1) = y0(1,2);
   uP(1) = y0(1,3);
   vP(1) = y0(1,4);
-  while t(i)<b
+  while t(i)<b+h
     i=i+1;
     t(i)= t(i-1)+h ;
     u(i) = u(i-1) + h*(uP(i-1));

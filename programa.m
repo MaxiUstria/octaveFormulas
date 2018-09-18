@@ -1,4 +1,5 @@
 clear;
+tic
 %Superficie
 x = [-11 :0.5:11];
 y = x;
@@ -8,7 +9,7 @@ mesh(j,k,j.*k);
 %Parametros
 a = 0;
 b = 2;
-h = 0.000009;
+h = 0.00000000001;
 y0 = [-9 -8 3 2];
 %Euler hacia adelante
 [t u v uP vP] = eu(a,b,y0,h);
@@ -24,3 +25,4 @@ plot3(u2,v2,(u2).*(v2),"r",'linewidth',4);
 p= lsode ("oct", y0, t);
 hold on;
 plot3(p(:,1),p(:,2),p(:,1).*p(:,2), 'b', "linewidth",8);
+toc
