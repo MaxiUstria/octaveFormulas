@@ -1,4 +1,6 @@
 clear;
+map = [0,0,0;0,0,0;0,0,0];
+colormap(map);
 tic
 %Superficie
 x = [-11 :0.5:11];
@@ -9,7 +11,7 @@ mesh(j,k,j.*k);
 %Parametros
 a = 0;
 b = 2;
-h = 0.00000000001;
+h = 0.001;
 y0 = [-9 -8 3 2];
 %Euler hacia adelante
 [t u v uP vP] = eu(a,b,y0,h);
@@ -20,9 +22,9 @@ plot3(u,v,u.*v,"k",'linewidth',4);
 [t2 u2 v2 uP2 vP2] = difCen(a,b,y0,h);
 hold on;
 %Grafica de la geodesica sobre la superficie
-plot3(u2,v2,(u2).*(v2),"r",'linewidth',4);
+plot3(u2,v2,(u2).*(v2),"k",'linewidth',4);
 %resolver ecuacion metodo octave
-p= lsode ("oct", y0, t);
+p = lsode ("oct", y0, t);
 hold on;
-plot3(p(:,1),p(:,2),p(:,1).*p(:,2), 'b', "linewidth",8);
+plot3(p(:,1),p(:,2),p(:,1).*p(:,2), 'k', "linewidth",8);
 toc
