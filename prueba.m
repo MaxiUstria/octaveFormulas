@@ -1,0 +1,10 @@
+y0 = [-9 -8 3 2];
+t0 = 0;
+tf = 2;
+h = 0.0001;
+N = (tf-t0)/h;
+[t,backward] = beul("oct","dfcn",y0,t0,tf,N);
+[t,trapecio] = trap("oct","dfcn",y0,t0,tf,N);
+[t,heunn] = heun("oct",t0,tf,y0,N);
+[t,rk44] = rk4("oct",t0,tf,y0,N);
+solver = ode45 ("fv", t, y0);

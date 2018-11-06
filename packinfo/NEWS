@@ -1,0 +1,43 @@
+Summary of important user-visible changes for odepkg-0.9.1:
+-------------------------------------------------------------------
+
+ ** ode23 is now in Octave-core (version 4.2.0)
+
+ Summary of important user-visible changes for odepkg-0.9.0:
+-------------------------------------------------------------------
+
+ ** odeset, odeget and ode45 are now in Octave-core (version 4.2.0)
+
+
+Summary of important user-visible changes for odepkg-0.8.5:
+-------------------------------------------------------------------
+
+ ** New odeset.m and odeget.m to be more Matlab-compatible.
+
+ ** Added new fields to odeset, odeget and odepkg_structure_check.
+
+ ** Added file  ode_struct_value_check.m  which is similar to 
+    odepkg_structure_check but it doesn't give errors (not always) 
+    but just warnings, it has no return arguments.
+
+ ** Added geometric integrators  odeSE, odeSV, odeSPVI, odeRATTLE
+    odeVV  and many other functions related to this solvers.
+
+ ** Added ode12.m which is Heun-Euler method.
+
+ ** Added odefwe.m which is Forward-Euler method with Richardson
+    extrapolation for error estimation.
+
+ ** New odebwe function which includes the previous functionalities
+    of odebwe and also the possibility to choose how to solve the
+    nonlinear system (Newton-Raphson or Inexact-Newton).
+
+ ** Added functions to approximate derivatives and the Hessian of
+    the Hamiltonian
+
+ ** Added new functions to compare strings and to comare a string
+    to a set of strings. These are based on the Levenshtein distance
+    and are more user-friendly for the management of typing errors.
+
+ ** Added a new function to better compare floating-point numbers
+    based on Kahan algorithm

@@ -1,0 +1,76 @@
+odepkg >> OdePkg : a package of ode solvers
+Tutorial
+ odepkg
+ODE Solver Functions
+ ode12
+ ode23s
+ ode54
+ ode78
+ odefwe
+DAE Solver Functions
+ ode2r
+ ode5r
+ odebda
+ odebwe
+ oders
+ odesx
+IDE Solver Functions
+ odebdi
+ odekdi
+DDE Solver Functions
+ ode23d
+ ode45d
+ ode54d
+ ode78d
+Geometric Integrators
+ odeRATTLE
+ odeSE
+ odeSPVI
+ odeSV
+ odeVV
+Output Functions
+ odeplot
+ odeprint
+ odephas2
+ odephas3
+Example Functions
+ odeexamples
+ odepkg_examples_dae
+ odepkg_examples_dde
+ odepkg_examples_ide
+ odepkg_examples_ode
+Testsuite Functions
+ odepkg_testsuite_calcscd
+ odepkg_testsuite_calcmescd
+ odepkg_testsuite_chemakzo
+ odepkg_testsuite_hires
+ odepkg_testsuite_implakzo
+ odepkg_testsuite_implrober
+ odepkg_testsuite_impltrans
+ odepkg_testsuite_oregonator
+ odepkg_testsuite_pollution
+ odepkg_testsuite_robertson
+ odepkg_testsuite_transistor
+One-Step Geometric Integration
+ bwe_inexact_newton
+ bwe_newton_raphson
+ fwe_heun
+ fwe_richardson
+ rattle
+ spectral_var_int
+ stormer_verlet
+ symplectic_euler
+ velocity_verlet
+Derivatives approximation
+ approx_Constr_grad
+ approx_Constr_Hess
+ approx_Hamilt_Hess
+ approx_Jacobian
+Other Functions
+ bvp4c
+ fuzzy_compare
+ golub_welsch
+ integrate_const
+ integrate_n_steps
+ inexact_newton
+ levenshtein
