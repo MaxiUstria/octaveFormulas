@@ -1,6 +1,0 @@
-if (exist (fullfile ((__octave_config_info__).fcnfiledir, "ode", "private")) == 7)
-  addpath (fullfile ((__octave_config_info__).fcnfiledir, "ode", "private"))
-else
-  error (["your version of octave does not seem to be ", ...
-          "compatible with this version of odepkg"]);
-endif

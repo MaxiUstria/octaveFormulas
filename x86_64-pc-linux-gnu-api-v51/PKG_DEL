@@ -1,1 +1,0 @@
-rmpath (fullfile ((__octave_config_info__).fcnfiledir, "ode", "private"))
